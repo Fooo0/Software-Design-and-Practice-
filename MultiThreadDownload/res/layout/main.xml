@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新建下载"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/path" />
+
+    <EditText
+        android:id="@+id/path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:text="@string/fileaddress2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存路径：" />
+
+    <EditText
+        android:id="@+id/filename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none"
+        android:text="/软设2下载/"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_threadnum" />
+
+    <EditText
+        android:id="@+id/edit_threadnum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:digits="12345"
+        android:inputType="number"
+        android:text="3" />
+
+    <LinearLayout
+        android:id="@+id/proxy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_proxy" />
+
+        <CheckBox
+            android:id="@+id/edit_proxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <GridLayout
+            android:id="@+id/host"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/edit_host" />
+
+            <EditText
+                android:id="@+id/edit_host"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:digits="12345"
+                android:ems="10"
+                android:inputType="number"
+                android:text="172.28.138.13" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/edit_port" />
+
+            <EditText
+                android:id="@+id/edit_port"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:digits="12345"
+                android:ems="10"
+                android:inputType="number"
+                android:text="8080" />
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/downloadbutton"
+            style="@style/AppTheme"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="@string/button" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:scrollbars="none"
+    	android:fadingEdge="vertical"
+    	android:layout_marginTop="15dp"
+    	>
+	    <LinearLayout
+	        android:id="@+id/main"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

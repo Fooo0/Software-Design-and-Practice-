@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">软件设计实践2</string>
+    <string name="record_name">下载记录</string>
+    <string name="filedir">位置：</string>
+    <string name="edit_threadnum">线程数量(不多于5条):</string>
+    <string name="edit_proxy">设置代理:</string>
+    <string name="edit_host">主机:</string>
+    <string name="edit_port">端口:</string>
+    <string name="username">用户名:</string>
+    <string name="password">密码:</string>
+    <string name="empty_input">啊哦，以上均需填写哦</string>
+    <string name="invalid_threadnum">啊哦，请检查线程数</string>
+    <string name="overmuch_threadnum">啊哦，总线程数不能多于10哦</string>
+    <string name="action_settings">Settings</string>
+    <string name="path">下载地址：</string>
+    <string name="button">开始</string>
+    <string name="success">下载完成</string>
+    <string name="error">下载出错</string>
+    <string name="stopbutton">暂停下载</string>
+    <string name="sdcarderror">没有SD卡</string>
+    <string name="fileaddress2">http://bcscdn.baidu.com/netdisk/BaiduYun_7.11.5.apk</string>
+
+</resources>
